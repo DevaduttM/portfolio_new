@@ -20,7 +20,7 @@ const ImageSection = ({ src, title, link, index, offsetY }) => {
           willChange: "transform",
         }}
       />
-      <h1 className="text-white text-center text-5xl font-Frontage absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <h1 className="text-white text-center md:text-5xl text-3xl font-Frontage absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         {title}
       </h1>
       <a href={link} target="blank" className={`${hovered ? `opacity-100` : `opacity-0`} text-white bg-[#000000] w-[10rem] h-[3rem] absolute bottom-[30%] flex justify-center items-center rounded-full font-Geogrotesque left-1/2 transform -translate-x-1/2 transition-all duration-300 ease-in-out`}>View Project</a>
@@ -58,12 +58,12 @@ const Projects = () => {
           initial={{opacity: 0, x: -20}}
           whileInView={{opacity: 1, x: 0}}
           transition={{duration: 0.8}}
-          className="text-black text-6xl font-Balladeer">My</motion.h1>
+          className="text-black md:text-6xl text-4xl font-Balladeer">My</motion.h1>
           <motion.h1
           initial={{opacity: 0, x: 20}}
           whileInView={{opacity: 1, x: 0}}
           transition={{duration: 0.8, delay: 0.3}}
-          className="text-black text-7xl font-Posterama">Projects</motion.h1>
+          className="text-black md:text-7xl text-5xl font-Posterama">Projects</motion.h1>
         </div>
 
         {projects.map((project, index) => (

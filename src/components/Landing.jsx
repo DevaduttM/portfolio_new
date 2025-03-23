@@ -74,7 +74,7 @@ const Landing = () => {
             transition={{ duration: 0.7, delay: 0.5 }}
             className="flex items-center justify-center"
           >
-            <h1 className="font-Frontage text-white md:text-9xl text-5xl z-10 font-bold text-center">
+            <h1 className="font-Frontage text-white md:text-9xl  text-[11vw] z-10 font-bold text-center">
               DEVADUTT
             </h1>
           </motion.div>

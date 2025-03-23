@@ -56,13 +56,14 @@ const Landing = () => {
           initial={{ scale: 1.06 }}
           animate={{ scale: 1 }}
           transition={{ duration: 1.5, ease: [0.5, 0.2, 0.1, 1], delay: 0.6 }}
-          className="absolute inset-0 "
+          className="absolute h-full w-full"
         >
           <Image
-            src="/profile.png"
+            src="/profile.jpg"
             alt="Background"
-            fill
-            className="object-cover scale-90 brightness-75"
+            layout="fill"
+            objectFit="cover"
+            className="object-cover md:scale-90 brightness-75  w-full h-full"
             style={{ transform: `translateY(${scrollY * 0.25}px)` }}
           />
         </motion.div>

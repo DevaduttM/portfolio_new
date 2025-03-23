@@ -53,17 +53,17 @@ const Projects = () => {
   return (
     <div ref={projectRef} id = "project-container" className="h-fit w-screen flex items-start justify-center">
       <div className="bg-[#e6e6e6] w-screen flex items-center justify-center flex-col">
-        <div className="h-[70vh] flex justify-center flex-col">
+        <div className="md:h-[70vh] h-[40vh] flex justify-center flex-col">
           <motion.h1 
           initial={{opacity: 0, x: -20}}
           whileInView={{opacity: 1, x: 0}}
           transition={{duration: 0.8}}
-          className="text-black md:text-6xl text-4xl font-Balladeer">My</motion.h1>
+          className="text-black md:text-6xl text-5xl font-Balladeer">My</motion.h1>
           <motion.h1
           initial={{opacity: 0, x: 20}}
           whileInView={{opacity: 1, x: 0}}
           transition={{duration: 0.8, delay: 0.3}}
-          className="text-black md:text-7xl text-5xl font-Posterama">Projects</motion.h1>
+          className="text-black md:text-7xl text-6xl font-Posterama">Projects</motion.h1>
         </div>
 
         {projects.map((project, index) => (

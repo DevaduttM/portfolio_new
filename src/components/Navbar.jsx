@@ -75,7 +75,7 @@ const Navbar = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1.5, ease: [0.5, 0.2, 0.1, 1], delay: 0.5 }}
-      className="z-10 fixed top-0 right-0 w-[50%] h-[5rem] bg-transparent flex items-center mix-blend-difference justify-around overflow-hidden"
+      className="md:z-10 fixed top-0 right-0 md:w-[50%] md:h-[5rem] md:bg-transparent md:flex hidden items-center md:mix-blend-difference md:flex-row flex-col justify-around overflow-hidden h-screen w-screen bg-[#1d1d1d] z-50"
     >
       {navItems.map((item, index) => (
         <motion.div

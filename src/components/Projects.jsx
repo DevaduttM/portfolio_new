@@ -10,9 +10,8 @@ const ImageSection = ({ src, title, link, index, offsetY }) => {
       <Image
         src={src}
         layout="fill"
-        objectFit="cover"
         alt={title}
-        className={`object-cover transition-transform duration-800 ease-in-out 
+        className={`object-cover transition-transform duration-800 ease-in-out  overflow-hidden
             ${hovered ? "md:scale-[1.52] scale-[1.82] brightness-25" : "md:scale-[1.5] scale-[1.8] brightness-30"}`}          
         style={{
           transform: `translateY(${(offsetY + index * 600) * -0.15}px)`,
@@ -51,8 +50,8 @@ const Projects = () => {
   ];
 
   return (
-    <div ref={projectRef} id = "project-container" className="h-fit w-screen flex items-start justify-center">
-      <div className="bg-[#e6e6e6] w-screen flex items-center justify-center flex-col">
+    <div ref={projectRef} id = "project-container" className="h-fit w-screen flex items-start justify-center overflow-x-hidden">
+      <div className="bg-[#e6e6e6] w-screen flex items-center justify-center flex-col overflow-x-hidden">
         <div className="md:h-[70vh] h-[40vh] flex justify-center flex-col">
           <motion.h1 
           initial={{opacity: 0, x: -20}}

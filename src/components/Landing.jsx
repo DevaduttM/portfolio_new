@@ -63,19 +63,19 @@ const Landing = () => {
             alt="Background"
             layout="fill"
             objectFit="cover"
-            className="object-cover md:scale-90 brightness-75  w-full h-full"
+            className="object-cover md:scale-90 scale-90 brightness-75 w-full h-full"
             style={{ transform: `translateY(${scrollY * 0.25}px)` }}
           />
         </motion.div>
 
-        <div className="h-fit w-fit flex items-center justify-center gap-3 flex-col">
+        <div className="h-fit w-fit flex items-center justify-center gap-3 flex-col overflow-hidden">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
             className="flex items-center justify-center"
           >
-            <h1 className="font-Frontage text-white md:text-9xl  text-[11vw] z-10 font-bold text-center">
+            <h1 className="font-Frontage text-white md:text-9xl text-[11vw] z-10 font-bold text-center">
               DEVADUTT
             </h1>
           </motion.div>

@@ -30,8 +30,7 @@ export default function Home() {
         <>
           <Navbar />
           <div
-            id="scroll-container"
-            className=" w-screen bg-black overflow-hidden"
+            className="absolute top-0 right-0 w-screen bg-black overflow-hidden"
           >
             <Landing />
             <About />

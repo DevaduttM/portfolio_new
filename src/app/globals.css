@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -49,6 +50,10 @@ body {
 
 .font-Lulo {
   font-family: 'Lulo', sans-serif;
+}
+
+.font-cascadia {
+  font-family: 'Cascadia Code', monospace;
 }
 
 @font-face {

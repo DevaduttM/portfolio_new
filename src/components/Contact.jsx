@@ -11,7 +11,8 @@ const Contact = () => {
                 animate={{ opacity: 1, scaleY: 1 }}
                 exit={{ opacity: 0, scaleY: 0 }}
                 transition={{ duration: 1, ease: [0.5, 0.2, 0.1, 1] }}
-                className="h-full w-1/2 bg-[#383838] origin-top"></motion.div>
+                className="h-full w-1/2 bg-[#383838] origin-top">
+                </motion.div>
                 <motion.div
                 initial={{ opacity: 0, scaleY: 0 }}
                 animate={{ opacity: 1, scaleY: 1 }}
